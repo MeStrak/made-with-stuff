@@ -1,0 +1,22 @@
+{
+  "name": "made-with-stuff",
+  "version": "0.0.1",
+  "description": "A simple, fun Vue.js (and React using Vuera) component to display a customisable 'made with ❤ by someone' tag",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Strak",
+  "license": "MIT",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js",
+    "*.d.ts"
+  ],
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
