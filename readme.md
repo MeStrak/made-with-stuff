@@ -47,7 +47,7 @@ or
 npm install @strak/made-with-stuff
 ```
 
-Then add it to the pages or components where you want to display it.
+Then add it to the pages or components where you want to display it. Font style, etc. will be inherited from your existing css.
 
 Set *beforetext* and *aftertext* props to configure the text. If they are not configured the component will display **Made with ❤ by me** (with random emoji).
 
@@ -76,7 +76,8 @@ export default {
 - Random number of emojis
 - Badge style display
 - Fruit machine type shuffle when selecting emojis
-
+- Shuffle on click
+- Possibly some different icon/font choices
 
 <!-- CONTRIBUTING -->
 ## Contributing
