@@ -5,11 +5,7 @@ twa-man-in-suit-levitating 🕴)
 
 <template>
   <span>
-    <MadeWithStuffVue
-      beforetext="Made with"
-      aftertext="by little one."
-      :maxemojis="3"
-    ></MadeWithStuffVue>
+    <MadeWithStuff beforetext="Made with" aftertext="by little one." :maxemojis="3"></MadeWithStuff>
   </span>
 </template>
 
@@ -17,8 +13,8 @@ twa-man-in-suit-levitating 🕴)
 import MadeWithStuff from "./MadeWithStuff.vue";
 export default {
   components: {
-    MadeWithStuff,
-  },
+    MadeWithStuff
+  }
 };
 </script>
 

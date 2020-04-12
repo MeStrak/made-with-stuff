@@ -1,26 +1,22 @@
-// To find an emoji of your liking, check out the official Emoji list:
-https://unicode.org/emoji/charts/emoji-list.html // Replace spaces with hyphens
-to get the class name! // (e.g. "man in suit levitating" becomes
-twa-man-in-suit-levitating 🕴)
-
 <template>
-  <span>
+  <div>
     {{ beforetext }}
-    <el v-for="index in maxemojis" :key="index">
+    <span v-for="index in maxemojis" :key="index">
       <em
         class="twa twa-2x"
         :class="emojiOptions[Math.floor(Math.random() * emojiOptions.length)]"
       ></em>
-      <el v-if="index <= maxemojis - 1">+</el>
-    </el>
+      <span v-if="index <= maxemojis - 1">+</span>
+    </span>
     {{ aftertext }}
-  </span>
+  </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
+<script lang="js">
+// import Vue from 'vue';
 
-export default class MadeWithStuff extends Vue{
+export default {
+  name: "MadeWithStuff",
   data() {
     return {
       emojiOptions: [
@@ -33,34 +29,33 @@ export default class MadeWithStuff extends Vue{
         "twa-smiling-face-with-heart-eyes",
         "twa-hammer",
         "twa-thumbs-up",
-        "twa-handshake",
-      ],
+        "twa-handshake"
+      ]
     };
   },
   props: {
     beforetext: {
       type: String,
-      default: "Made with",
+      default: "Made with"
     },
     aftertext: {
       type: String,
-      default: "by me",
+      default: "by me"
     },
     maxemojis: {
       type: Number,
-      default: 1,
-    },
+      default: 1
+    }
   },
 
   methods: {
-    onClick(event: any) {
-      this.$emit("click", event);
-    },
-
-    onDoubleClick(event: any) {
-      this.$emit("dblclick", event);
-    },
-  },
+    // onClick(event: MouseEvent | KeyboardEvent) {
+    //   this.$emit("click", event);
+    // },
+    // onDoubleClick(event: MouseEvent | KeyboardEvent) {
+    //   this.$emit("dblclick", event);
+    // },
+  }
 };
 </script>
 
