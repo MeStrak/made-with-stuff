@@ -26,6 +26,7 @@ Some examples:
     Made with 👍 by Strak.
     Made with 💚 by me.
     Made with 🍕 + ☕ by our awesome team.
+    Built by Little One, fuelled by ☕.
 
 
 ### Built With
