@@ -1,8 +1,3 @@
-// To find an emoji of your liking, check out the official Emoji list:
-https://unicode.org/emoji/charts/emoji-list.html // Replace spaces with hyphens
-to get the class name! // (e.g. "man in suit levitating" becomes
-twa-man-in-suit-levitating 🕴)
-
 <template>
   <span>
     {{ beforetext }}
@@ -18,9 +13,9 @@ twa-man-in-suit-levitating 🕴)
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+// import Vue from 'vue';
 
-export default class MadeWithStuff extends Vue{
+export default {
   data() {
     return {
       emojiOptions: [
@@ -53,13 +48,12 @@ export default class MadeWithStuff extends Vue{
   },
 
   methods: {
-    onClick(event: any) {
-      this.$emit("click", event);
-    },
-
-    onDoubleClick(event: any) {
-      this.$emit("dblclick", event);
-    },
+    // onClick(event: MouseEvent | KeyboardEvent) {
+    //   this.$emit("click", event);
+    // },
+    // onDoubleClick(event: MouseEvent | KeyboardEvent) {
+    //   this.$emit("dblclick", event);
+    // },
   },
 };
 </script>

@@ -1,9 +1,13 @@
 {
   "name": "made-with-stuff",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A simple, fun Vue.js (and React using Vuera) component to display a customisable 'made with ❤ by someone' tag",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "dev": "vue serve MadeWithStuff.vue",
+    "build": "bili --bundle-node-modules",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Strak",
@@ -17,6 +21,13 @@
     "*.d.ts"
   ],
   "dependencies": {
+    "rollup-plugin-typescript2": "^0.27.0",
+    "typescript": "^3.8.3",
     "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "bili": "^4.9.0",
+    "rollup-plugin-vue": "^5.1.6",
+    "vue-template-compiler": "^2.6.11"
   }
 }
