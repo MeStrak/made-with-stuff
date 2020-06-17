@@ -54,10 +54,12 @@ Set *beforetext* and *aftertext* props to configure the text. If they are not co
 
 Set *:maxemojis* to display more than one emoji, like this: **Made with ❤ + 👍 by me**.
 
+Set *:maxemojis* to an integer from 1-5 to adjust the size of the emojis (1 is smallest).
+
 ```html
 <template>
   <span>
-    <MadeWithStuff beforetext="Made with" aftertext="by us!" :maxemojis="3"></MadeWithStuffVue>
+    <MadeWithStuff beforetext="Made with" aftertext="by us!" :maxemojis="3" :emojisize="1"></MadeWithStuffVue>
   </span>
 </template>
 
