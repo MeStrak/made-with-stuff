@@ -77,7 +77,6 @@ export default {
 - Random number of emojis
 - Badge style display
 - Fruit machine type shuffle when selecting emojis
-- Shuffle on click
 - Possibly some different icon/font choices
 
 <!-- CONTRIBUTING -->
