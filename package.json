@@ -1,6 +1,6 @@
 {
   "name": "@strak/made-with-stuff",
-  "version": "0.0.20",
+  "version": "0.0.30",
   "description": "A simple, fun Vue.js (and React using Vuera) component to display a customisable 'made with ❤ by someone' tag",
   "main": "./dist/@strak/made-with-stuff.umd.js",
   "unpkg": "./dist/@strak/made-with-stuff.umd.min.js",
