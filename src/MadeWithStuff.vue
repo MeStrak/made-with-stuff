@@ -1,11 +1,8 @@
 <template>
-  <div>
+  <div @click="shuffleEmojis()">
     {{ beforetext }}
     <span v-for="index in maxemojis" :key="index">
-      <em
-        class="twa twa-2x"
-        :class="emojiOptions[Math.floor(Math.random() * emojiOptions.length)]"
-      ></em>
+      <em :class="'twa twa-' + emojisize + 'x ' + displayedEmojis[index-1]"></em>
       <span v-if="index <= maxemojis - 1">+</span>
     </span>
     {{ aftertext }}
@@ -30,7 +27,8 @@ export default {
         "twa-hammer",
         "twa-thumbs-up",
         "twa-handshake"
-      ]
+      ],
+      displayedEmojis:[]
     };
   },
   props: {
@@ -45,16 +43,33 @@ export default {
     maxemojis: {
       type: Number,
       default: 1
-    }
+    },
+    emojisize: {
+      type: Number,
+      default: 1
+    },
+  },
+  mounted() {
+    this.shuffleEmojis();
   },
 
   methods: {
-    // onClick(event: MouseEvent | KeyboardEvent) {
-    //   this.$emit("click", event);
-    // },
-    // onDoubleClick(event: MouseEvent | KeyboardEvent) {
-    //   this.$emit("dblclick", event);
-    // },
+    clicked()
+    {
+      console.log('fart')
+    },
+    shuffleEmojis(){
+
+      console.log('fart')
+
+  this.displayedEmojis = Array.from({length: this.maxemojis}, () => this.emojiOptions[Math.floor(Math.random() * this.emojiOptions.length)]);
+      console.log(this.displayedEmojis)
+
+    },
+    getRandomEmoji()
+    {
+
+    }
   }
 };
 </script>

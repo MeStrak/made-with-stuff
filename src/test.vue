@@ -5,7 +5,7 @@ twa-man-in-suit-levitating 🕴)
 
 <template>
   <span>
-    <MadeWithStuff beforetext="Made with" aftertext="by little one." :maxemojis="3"></MadeWithStuff>
+    <MadeWithStuff beforetext="Made with" aftertext="by little one." :maxemojis="1" :emojisize="1"></MadeWithStuff>
   </span>
 </template>
 
