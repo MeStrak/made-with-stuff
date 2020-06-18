@@ -10,7 +10,6 @@
 </template>
 
 <script lang="js">
-// import Vue from 'vue';
 
 export default {
   name: "MadeWithStuff",
@@ -54,22 +53,9 @@ export default {
   },
 
   methods: {
-    clicked()
-    {
-      console.log('fart')
-    },
     shuffleEmojis(){
-
-      console.log('fart')
-
-  this.displayedEmojis = Array.from({length: this.maxemojis}, () => this.emojiOptions[Math.floor(Math.random() * this.emojiOptions.length)]);
-      console.log(this.displayedEmojis)
-
+      this.displayedEmojis = Array.from({length: this.maxemojis}, () => this.emojiOptions[Math.floor(Math.random() * this.emojiOptions.length)]);
     },
-    getRandomEmoji()
-    {
-
-    }
   }
 };
 </script>
