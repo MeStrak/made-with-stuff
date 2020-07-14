@@ -1,16 +1,16 @@
 {
-  "name": "@strak/made-with-stuff",
-  "version": "0.0.31",
+  "name": "@mestrak/made-with-stuff",
+  "version": "1.0.0",
   "description": "A simple, fun Vue.js (and React using Vuera) component to display a customisable 'made with ❤ by someone' tag",
-  "main": "./dist/@strak/made-with-stuff.umd.js",
-  "unpkg": "./dist/@strak/made-with-stuff.umd.min.js",
+  "main": "./dist/@mestrak/made-with-stuff.umd.js",
+  "unpkg": "./dist/@mestrak/made-with-stuff.umd.min.js",
   "scripts": {
     "dev": "vue serve ./src/MadeWithStuff.vue",
-    "build": "vue-cli-service build --target lib --name @strak/made-with-stuff ./src/MadeWithStuff.vue",
-    "build-bundle": "vue-cli-service build --target lib --name @strak/made-with-stuff ./src/MadeWithStuff.vue",
+    "build": "vue-cli-service build --target lib --name @mestrak/made-with-stuff ./src/MadeWithStuff.vue",
+    "build-bundle": "vue-cli-service build --target lib --name @mestrak/made-with-stuff ./src/MadeWithStuff.vue",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Strak",
+  "author": "MeStrak",
   "license": "MIT",
   "private": false,
   "files": [
