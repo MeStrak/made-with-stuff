@@ -1,0 +1,1 @@
+declare module '@mestrak/made-with-stuff';
